@@ -19,24 +19,22 @@ http://localhost:8080/api/
 ### 1. Проверка работоспособности API
 **Запрос**:
 ```http
-GET /main
+GET api/main
 Ответ:
-
-```
 Hello World
 
 ```bash
 curl -X GET http://localhost:8080/api/main
 
-2. Получение стандартного кота
+#2. Получение стандартного кота
 Запрос:
 
-```http
-GET /cat
+http
+GET api/cat
 
-```Ответ (JSON):
+Ответ (JSON):
 
-```json
+json
 {
   "name": "Barsik",
   "age": 5,
@@ -47,14 +45,14 @@ GET /cat
 #3. Создание кастомного кота
 Запрос:
 
-```http
-POST /special?name={имя_кота}
+http
+POST api/special?name={имя_кота}
 Параметры:
 
-name	String	Да	Имя нового кота.
+name	String для нового кота.
 ```Ответ (JSON):
 
-```json
+json
 {
   "name": "Ваше_имя",
   "age": 5,
